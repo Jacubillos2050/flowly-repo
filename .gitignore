@@ -2,6 +2,7 @@
 .idea/
 *.iml
 *.iws
+*.ipr
 
 # Build
 target/
@@ -22,3 +23,18 @@ logs
 *.yml
 !application.properties
 !application.yml
+
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
