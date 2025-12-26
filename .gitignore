@@ -6,29 +6,30 @@
 
 # Build
 target/
-!*.md
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 # OS
 .DS_Store
 Thumbs.db
 
 # Logs
-logs
+logs/
 *.log
 
-# Env
-.env
-*.properties
-*.yaml
-*.yml
-!application.properties
-!application.yml
+# Config files (sensitive profiles)
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+src/main/resources/application-*.yaml
 
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Allow base config only
+!src/main/resources/application.properties
+!src/main/resources/application.yml
+!src/main/resources/application.yaml
+
+# Environment files
+.env
 
 ### STS ###
 .apt_generated
@@ -38,3 +39,6 @@ target/
 .settings
 .springBeans
 .sts4-cache
+
+# Documentation (keep markdown)
+!*.md
