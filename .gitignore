@@ -1,1 +1,24 @@
+# IDE
 .idea/
+*.iml
+*.iws
+
+# Build
+target/
+!*.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Env
+.env
+*.properties
+*.yaml
+*.yml
+!application.properties
+!application.yml
